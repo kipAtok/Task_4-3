@@ -1,0 +1,133 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+		Width="800" 
+		Height="600"
+        x:Class="Task_4_3.MainWindow"
+        Title="Task_4_3">
+
+	<Grid
+		ShowGridLines="True"
+		RowDefinitions="90, *"
+		ColumnDefinitions="*, 200">
+
+		<StackPanel Grid.Row="0"
+					Grid.Column="0"
+					Orientation="Horizontal"
+					VerticalAlignment="Center">
+			
+			<Button VerticalAlignment="Stretch"
+					VerticalContentAlignment="Center"
+					Background="White">
+				Home
+			</Button>
+
+			<Button VerticalAlignment="Stretch"
+					VerticalContentAlignment="Center"
+					Background="White">
+				About
+			</Button>
+			
+			<ComboBox SelectedIndex="0"
+					  MaxDropDownHeight="60">
+				<ComboBoxItem>Blog's main topic 1</ComboBoxItem>
+				<ComboBoxItem>Blog's main topic 2</ComboBoxItem>
+				<ComboBoxItem>Blog's main topic 3</ComboBoxItem>
+			</ComboBox>
+			
+			<ListBox Background="White">
+				<ListBoxItem>Associated blog 1</ListBoxItem>
+				<ListBoxItem>Associated blog 2</ListBoxItem>
+				<ListBoxItem>Associated blog 3</ListBoxItem>
+				<ListBoxItem>Associated blog 4</ListBoxItem>
+			</ListBox>
+			
+		</StackPanel>
+		
+		<StackPanel Grid.Row="0"
+					Grid.Column="1"
+					Orientation="Horizontal"
+					HorizontalAlignment="Right">
+			
+			<Button VerticalAlignment="Stretch"
+					VerticalContentAlignment="Center"
+					Background="White">
+				RSS
+			</Button>
+			
+		</StackPanel>
+
+		<StackPanel Grid.Row="1"
+					Grid.Column="0"
+					Margin="0, 0, 40, 0">
+			
+			<TextBlock Height="20">
+				Article 1
+			</TextBlock>
+
+			<TextBlock TextWrapping="Wrap"
+					   Margin="0, 20, 0, 0">
+				Praesent leo nunc, scelerisque ut lectus in, iaculis porta metus. Ut bibendum varius efficitur. Donec vel feugiat lorem, a consectetur ex. Suspendisse potenti. Phasellus vitae gravida urna. Proin fermentum, ligula non pretium vulputate, est erat iaculis dui, at dignissim purus libero commodo nunc. Maecenas vel imperdiet mauris. Donec malesuada purus et turpis sodales, sed fermentum turpis aliquet. Fusce a egestas mi, at malesuada felis. Praesent eget molestie est. Quisque ac venenatis libero. Aenean molestie molestie libero, vitae consequat ipsum tempus at.
+				Mauris eu est nulla. Sed blandit tellus eu augue congue laoreet. Mauris a lorem lobortis, tincidunt neque eget, feugiat justo. Pellentesque blandit, nulla in bibendum imperdiet, erat elit tincidunt eros, vel hendrerit nibh velit sit amet odio. 
+			</TextBlock>
+
+			<Image Source="\Assets\fmbchk.png"
+				   HorizontalAlignment="Center"
+				   Width="255">
+			</Image>
+
+			<Grid RowDefinitions="*"
+				  ColumnDefinitions="auto, *">
+				
+				<TextBlock Grid.Column="0"> 
+					Tags: Tag1, Tag2, Tag3
+				</TextBlock>
+
+				<TextBlock Grid.Column="1"
+						   HorizontalAlignment="Right">
+					Rate: 4/5
+				</TextBlock>
+				
+			</Grid>
+				
+		</StackPanel>
+
+		<StackPanel Grid.Row="1"
+					Grid.Column="1"
+					Orientation="Vertical"
+					Margin="10, 40, 10, 0">
+			
+			<TextBlock TextWrapping="Wrap"> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor massa odio, at pharetra sapien finibus eget. Suspendisse consectetur volutpat mi, eu sodales dui condimentum nec. Pellentesque rhoncus mattis lectus...
+			</TextBlock>
+			
+			<TextBlock TextDecorations="Underline"
+					   HorizontalAlignment="Right">
+				More
+			</TextBlock>
+
+			<TextBlock HorizontalAlignment="Right">
+				Yesterday
+			</TextBlock>
+
+			<TextBlock TextWrapping="Wrap"
+					   Margin="0, 20, 0, 0">
+				Duis aliquet dictum tortor, sit amet ultricies lectus mollis ut. Nulla laoreet, felis id convallis tempus, leo odio tristique tortor, eget volutpat est purus vel lacus. Nam pulvinar turpis nec mauris aliquam ornare euismod viverra lacus. Phasellus quis sem sed ex facilisis lacinia eu et orci...
+			</TextBlock>
+
+			<TextBlock TextDecorations="Underline"
+					   HorizontalAlignment="Right">
+				More
+			</TextBlock>
+
+			<TextBlock HorizontalAlignment="Right">
+				1 week ago
+			</TextBlock>
+			
+		</StackPanel>
+		
+	</Grid>
+	
+</Window>
