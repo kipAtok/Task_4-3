@@ -6,7 +6,8 @@
 		Width="800" 
 		Height="600"
         x:Class="Task_4_3.MainWindow"
-        Title="Task_4_3">
+        Title="Task_4_3"
+		CanResize="False">
 
 	<Grid
 		ShowGridLines="True"
